@@ -8,12 +8,6 @@ from database import app, db
 from models import House
 
 
-@app.route('/test', methods=['POST'])
-def test():
-
-    return request.data
-
-
 @app.route('/listings', methods=['GET'])
 def listings():
 
